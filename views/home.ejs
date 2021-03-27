@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>PLSchedul</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.nicepng.com/png/detail/340-3408251_premier-league-premier-league-logo-pes-2017.png"
+                alt="" class="img-logo">
+        </div>
+        <div class="title">
+            <h4>Premier League Matches Schedule</h4>
+        </div>
+        <div class="sub-form">
+            <% if (message) {%>
+                <div class="alert alert-<%= message.type%>">
+                    <%= message.message%>
+                </div>
+                <% } %>
+
+                    <form action="add" method="POST">
+                        <input type="email" placeholder="Enter Your Mail" class="sub-input" required name="email">
+                        <button class="sub-btn">SUBSCRIBE</button>
+                    </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
